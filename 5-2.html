@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+    	<head>
+        	<meta charset = "UTF-8">
+        	<title>
+            研修4-6
+        	</title>
+        	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    	</head>
+		<body>
+        	<input type="text" id="tete">
+        	<button id="B">ボタン</button>
+            <button id="C">クリアボタン</button>
+    		<script>
+        		$("#B").on("click",function() {
+            	hyou.innerText = tete.value
+        		})
+                $("#C").on("click",function() {
+                $("#hyou").text("") 
+        		})
+			</script>
+         	   <p id="hyou"></p>
+
+   		 </body>
+</html>

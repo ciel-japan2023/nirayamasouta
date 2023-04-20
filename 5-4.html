@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+    	<head>
+        	<meta charset = "UTF-8">
+        	<title>
+            研修4-6
+        	</title>
+        	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    	</head>
+		<body>
+            <input type="text" id="AA">
+            +
+            <input type="text" id="BB">
+            <button onclick="bobo()">ボタン</button>
+            
+            <p id="result"></p>
+            
+            <script>
+            function bobo() {
+              var num1 = parseInt(document.getElementById("AA").value);
+              var num2 = parseInt(document.getElementById("BB").value);
+              if (isNaN(num1) || isNaN(num2)) {
+                alert("数字以外が入力されました。");
+                     } else {
+                        document.getElementById("result").innerHTML = num1 + num2;
+                        }
+            }
+            
+            </script>
+		
+         	   <p id="tasu"></p>
+
+   		 </body>
+</html>
